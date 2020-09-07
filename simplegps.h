@@ -48,7 +48,7 @@ public:
          altitude;
   char latitude_format, // 'N' or 'S' for North or South
        longitude_format, // 'E' or 'W' for East or West
-       altitude_format; // Shoould be 'M' for meters
+       altitude_format; // Should be 'M' for meters
 
   // Start comm. on Serial Port 2 and initialize public variables above to 0 and '\0' as applicable
   void initialize(int baud_rate);
