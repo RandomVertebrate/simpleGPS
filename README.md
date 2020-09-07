@@ -3,14 +3,22 @@ For ESP32: Header file to get bare minimum GPS data from GPS module using Arduin
 
 Create simplegps object
 
-call simplegps::update_data()
+    simplegps gps;
+
+Initialize
+
+    gps.initialize(9600);
+
+call simplegps::update_data() to read from module
+
+    gps.update_data();
 
 Read data from variables....
     
-    simplegps::time_hours
-    simplegps::time_minutes
-    simplegps::time_seconds
-    simplegps::lattitude_degrees
-    simplegps::lattitude_minutes
+    int hours = gps.time_hours
+    int minutes = gps.time_minutes
+    float seconds = gps.time_seconds
+    int lattitude_degrees = gps.lattitude_degrees
+    float lattitude_minutes = gps.lattitude_minutes
     
 ....etc.
