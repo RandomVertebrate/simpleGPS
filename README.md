@@ -2,6 +2,7 @@
 For ESP32: Header file to get bare minimum GPS data from GPS module using Arduino IDE
 
 Create simplegps object
+
 call simplegps::update_data()
 
 Read data from variables....
